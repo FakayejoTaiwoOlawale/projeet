@@ -1,12 +1,21 @@
-import React from 'react'
-import Header from './components/Header'
-
+import React from "react";
+import Homepage from "./pages/Homepage";
+import { Routes, Route } from "react-router";
+import BlackPage from "./pages/BlackPage";
 const App = () => {
   return (
-    <div className='min-h-screen m-0 p-0'>
-      <Header/>
-    </div>
-  )
-}
+    
 
-export default App
+      <div className="min-h-screen m-0 p-0">
+        <Routes>
+          <Route path="/" element={<Homepage/>}/>
+          
+          <Route path="/blackpage" element={<BlackPage/>}/>
+         
+        </Routes>
+        
+      </div>
+  );
+};
+
+export default App;
