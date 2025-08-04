@@ -1,10 +1,9 @@
-import { useQuery } from "@tanstack/react-query";
+import { QueryClient, useQuery } from "@tanstack/react-query";
 import { Media, mediaSchema } from "../schema/media.schema";
-    import axios from "axios";
+import axios from "axios";
 
-const getData=async ()=>{
-    const response= await axios("api/calls/media")
-    return Media.parse(response.data)
+
+export default useMedia():mediaSchema[]{
+    
 }
 
-const {isloading,data,erro}=useQuery(['media'],data)
