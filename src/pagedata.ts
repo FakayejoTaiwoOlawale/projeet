@@ -1,0 +1,1 @@
+export const pagedata=["Feautures","solution","Plan","Pricing","Resources"]

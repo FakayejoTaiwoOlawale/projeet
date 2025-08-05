@@ -13,6 +13,8 @@ const Header = () => {
           <p className="hover:text-blue-600 font-semibold text-gray-500">Solutions</p>
           <p className="hover:text-blue-600 font-semibold text-gray-500">Home</p>
           <p className="hover:text-blue-600 font-semibold text-gray-500">Plans</p>
+          <p className="hover:text-blue-600 font-semibold text-gray-500">Pricing</p>
+          <p className="hover:text-blue-600 font-semibold text-gray-500">Resource</p>
         </div>
       </div>
 

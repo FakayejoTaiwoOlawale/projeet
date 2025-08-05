@@ -1,0 +1,3 @@
+//this is like our main setup so we dont have to manually add this thing to every file...
+
+import "@testing-library/jest-dom"
