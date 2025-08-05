@@ -8,3 +8,10 @@ export const mediaSchema=z.object({
 })
 
 export type Media=z.infer<typeof mediaSchema>;
+
+export const emailSchema=z.object({
+    email:z.string(),
+    name:z.string().optional()
+})
+
+export type Email=z.infer<typeof emailSchema>;
