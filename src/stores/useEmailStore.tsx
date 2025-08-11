@@ -9,5 +9,6 @@ interface UserDetails{
 
 export const UseUserStore=create<UserDetails>((set){
     name:"";
-    email:""
+    setName:(value)=>(set(name:value));
+    email:"";
 })
