@@ -3,6 +3,9 @@ import Homepage from "./pages/Homepage";
 import { Routes, Route } from "react-router";
 import BlackPage from "./pages/BlackPage";
 import { motion, useScroll } from "motion/react";
+import Pages from "./pages/Pages";
+import Pricing from "./pages/Pricing";
+import User from "./pages/User";
 const App = () => {
   const { scrollYProgress } = useScroll();
   return (
@@ -14,6 +17,9 @@ const App = () => {
       />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/plans" element={<Pages />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/user" element={<User />} />
 
         <Route path="/blackpage" element={<BlackPage />} />
       </Routes>

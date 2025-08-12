@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import ArrowDown from "../assets/ArrowDown";
 import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toDisplay, setToDisplay] = useState(false);
@@ -18,31 +19,32 @@ const Header = () => {
               className="flex flex-row items-center space-x-0.5"
               onClick={() => setToDisplay(!toDisplay)}
             >
-              <p className="hover:text-blue-600 font-semibold text-gray-500">
+              <Link to={"/features"} className="hover:text-blue-600 font-semibold text-gray-500">
                 Features
-              </p>
+              </Link>
               <ArrowDown />
             </div>
-            <p className="hover:text-blue-600 font-semibold text-gray-500">
+            <Link to={"/solutions"} className="hover:text-blue-600 font-semibold text-gray-500">
               Solutions
-            </p>
-            <p className="hover:text-blue-600 font-semibold text-gray-500">
+            </Link>
+            <Link to={"/"} className="hover:text-blue-600 font-semibold text-gray-500">
               Home
-            </p>
-            <p className="hover:text-blue-600 font-semibold text-gray-500">
+            </Link>
+            <Link to={"/plans"} className="hover:text-blue-600 font-semibold text-gray-500">
               Plans
-            </p>
-            <p className="hover:text-blue-600 font-semibold text-gray-500">
+            </Link>
+            <Link to={"/pricing"} className="hover:text-blue-600 font-semibold text-gray-500">
               Pricing
-            </p>
-            <p className="hover:text-blue-600 font-semibold text-gray-500">
+            </Link>
+            <Link to={"/resource"} className="hover:text-blue-600 font-semibold text-gray-500">
               Resource
-            </p>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-row items-center">
-          <h1 className="text-black text-lg mr-4">Log in</h1>
+          
+          <Link to={'/user'} className="text-black text-lg mr-4">Log in</Link>
           <p className="bg-blue-600 text-lg font-semibold py-4 text-white px-2">
             Get Projeet for free
           </p>
