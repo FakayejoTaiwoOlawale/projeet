@@ -3,11 +3,7 @@ import {motion} from "framer-motion"
 import { usePopStore } from '../stores/usePopStore'
 
 const Popup = () => {
-    const popRef=useRef<number|null>(null)
-    const {isShowing,setIshowing}=usePopStore()
-    useEffect(()=>{
-        setInterval()
-    })
+  
   return (
     <div className='fixed top-0 right-24 left-0'>
       <motion.div className='w-40 shadow-2xl'initial={{opacity:0,x:200}} animate={{opacity:1,x:0}} transition={{duration:0.5}}>
